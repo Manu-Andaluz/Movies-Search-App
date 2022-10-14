@@ -1,0 +1,39 @@
+.navbar {
+    height: 10vh;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #858383;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+}
+
+.list-item {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+}
+
+.list-item a {
+    color: white;
+    padding: 1rem 10px;
+    text-decoration: none;
+}
+
+.list-item a:hover,
+.list-item a.active {
+    background-color: #a7a7a7;
+    color: white;
+}
