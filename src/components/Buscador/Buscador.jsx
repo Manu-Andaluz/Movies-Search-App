@@ -16,6 +16,7 @@ export class Buscador extends Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.getMovies(this.state.title);
+    this.state.title = "";
   }
 
   render() {
@@ -42,7 +43,7 @@ export class Buscador extends Component {
             SEARCH
           </button>
         </form>
-        <ul className="grid grid-cols-4 place-content-center gap-4 mt-5">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start mt-4">
           {this.props.movie &&
             this.props.movie.map((movie) => (
               <MovieCard
