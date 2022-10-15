@@ -2,7 +2,7 @@
 
 export function getMovies(title) {
     return function (dispatch) {
-        return fetch(`http://www.omdbapi.com/?apikey=d1dcdf9c&s=${title}`)
+        return fetch(`https://www.omdbapi.com/?apikey=d1dcdf9c&s=${title}`)
             .then(res_json => res_json.json())
             .then(res => dispatch({ type: 'GET_MOVIES', payload: res.Search }))
     }
@@ -10,7 +10,7 @@ export function getMovies(title) {
 
 export function getMovieDetail(id) {
     return function (dispatch) {
-        return fetch(`http://www.omdbapi.com/?apikey=d1dcdf9c&i=${id}`)
+        return fetch(`https://www.omdbapi.com/?apikey=d1dcdf9c&i=${id}`)
             .then(res => res.json())
             .then(res => dispatch({ type: 'GET_MOVIES_DETAIL', payload: res }))
     }
