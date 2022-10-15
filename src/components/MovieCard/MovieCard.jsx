@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const MovieCard = ({ id, title, poster }) => {
   const dispatch = useDispatch();
   return (
-    <div className="grid place-content-center gap-4" key={id}>
+    <div className="grid place-content-center gap-4 py-4 rounded" key={id}>
       <Link to={`/movie/:${id}`} className="text-center grid gap-4">
         <h4>{title}</h4>
         <img
