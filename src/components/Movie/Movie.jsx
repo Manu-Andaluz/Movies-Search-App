@@ -18,7 +18,7 @@ export default function Movie() {
   const state = useSelector((state) => state.movieDetail);
 
   return (
-    <div className="flex m-auto p-5">
+    <div className="flex m-auto p-5 text-white">
       <img src={state.Poster} />
 
       <div className="grid gap-3 place-content-center mt-3 p-4">

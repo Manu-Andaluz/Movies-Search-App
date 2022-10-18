@@ -15,7 +15,7 @@ const MovieCard = ({ id, title, poster }) => {
         />
       </Link>
       <div className="flex container justify-around">
-        <h4 className="mr-2 w-40 text-lg">{title}</h4>
+        <h4 className="mr-2 w-40 text-lg text-white">{title}</h4>
 
         <button
           className="fav text-lg transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"

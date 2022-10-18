@@ -24,23 +24,27 @@ export class Buscador extends Component {
     return (
       <div className="p-5">
         <form
-          className="flex items-center"
+          className="flex items-center justify-center"
           onSubmit={(e) => this.handleSubmit(e)}
         >
           <input
             type="text"
-            placeholder="Movie..."
-            className="mr-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-8 py-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Search Movie..."
+            className="bg-gray-100 text-sm focus:ring-blue-500 focus:border-blue-500 block sm:w-96 2xl:w-3/5 px-8 py-2.5 dark:placeholder-gray-700 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
             id="title"
             autoComplete="off"
             value={title}
             onChange={(e) => this.handleChange(e)}
           />
-          <button
-            type="submit"
-            className=" text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          >
-            SEARCH
+          <button type="submit" className="bg-gray-100 text-sm px-8 py-2.5">
+            <svg
+              class="w-4 h-5 text-gray-900"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
+            </svg>
           </button>
         </form>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start mt-4">

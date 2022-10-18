@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 export class ConnectedList extends Component {
   render() {
     return (
-      <div className="grid place-content-center p-5">
+      <div className="grid place-content-center p-5 text-white">
         <h2 className="text-2xl mt-4">Favorite Movies</h2>
         <ul>
           {this.props.movies &&
             this.props.movies.map((movie) => (
-              <div key={movie.id}>
+              <div key={movie.id} className="text-white">
                 <Link to={`/movie/:${movie.id}`}>{movie.title}</Link>
                 <button
                   onClick={() => this.props.removeMovieFavorite(movie.id)}
