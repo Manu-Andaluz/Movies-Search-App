@@ -19,7 +19,7 @@ const MovieCard = ({ id, title, poster }) => {
 
         <button
           className="fav text-lg transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
-          onClick={() => dispatch(addMovieFavorite({ title: title, id: id }))}
+          onClick={() => dispatch(addMovieFavorite({ title: title, id: id, img: poster }))}
         >
           ⭐
         </button>
