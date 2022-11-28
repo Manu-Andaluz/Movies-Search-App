@@ -6,7 +6,9 @@ export default function NavBar() {
     <header className="navbar">
       <nav className="flex justify-between bg-white border-gray-200 px-5 py-6 sm:px-4 dark:bg-gray-900">
         <div className="flex">
-          <h4 className="text-slate-100 lg:text-lg sm:text-sm ">Movie App</h4>
+          <Link to="/" className="text-slate-100 text-lg">
+            Movies App
+          </Link>
         </div>
 
         <ul className="flex">
