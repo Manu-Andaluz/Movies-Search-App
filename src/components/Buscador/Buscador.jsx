@@ -9,6 +9,7 @@ export class Buscador extends Component {
     this.state = {
       title: "",
     };
+    this.props.getMovies("avengers");
   }
   handleChange(event) {
     this.setState({ title: event.target.value });
@@ -22,7 +23,7 @@ export class Buscador extends Component {
   render() {
     const { title } = this.state;
     return (
-      <div className="p-5">
+      <div className="p-5 my-5">
         <form
           className="flex items-center justify-center"
           onSubmit={(e) => this.handleSubmit(e)}

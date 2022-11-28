@@ -7,11 +7,12 @@ export class ConnectedList extends Component {
   render() {
     return (
       <div className="grid place-content-center p-5 text-white">
-        <h2 className="text-2xl mt-4">Favorite Movies</h2>
-        <ul>
+        <h2 className="text-2xl mb-8">Favorite Movies</h2>
+        <ul className="grid gap-8 grid-cols-4 place-content-center">
           {this.props.movies &&
             this.props.movies.map((movie) => (
               <div key={movie.id} className="text-white">
+                <img src={movie.img} alt="" />
                 <Link to={`/movie/:${movie.id}`}>{movie.title}</Link>
                 <button
                   onClick={() => this.props.removeMovieFavorite(movie.id)}
