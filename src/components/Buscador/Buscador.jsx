@@ -9,7 +9,7 @@ export class Buscador extends Component {
     this.state = {
       title: "",
     };
-    this.props.getMovies("avengers"); //
+    this.props.getMovies("avengers");
   }
   handleChange(event) {
     this.setState({ title: event.target.value });
