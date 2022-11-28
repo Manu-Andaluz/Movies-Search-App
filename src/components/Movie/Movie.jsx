@@ -18,7 +18,7 @@ export default function Movie() {
   const state = useSelector((state) => state.movieDetail);
 
   return (
-    <div className="grid place-content-center rounded w-3/5 m-auto p-5 text-white my-5 text-white">
+    <div className="grid place-content-center rounded w-3/5 m-auto p-5 text-white my-5">
       <img src={state.Poster} className="m-auto rounded-lg" />
 
       <div className="grid gap-3 place-content-center m-auto p-4">
