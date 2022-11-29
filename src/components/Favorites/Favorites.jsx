@@ -7,10 +7,8 @@ export class ConnectedList extends Component {
   render() {
     return (
       <div className="grid place-content-center my-2 text-center">
-        <h2 className="text-2xl mb-auto text-white mt-5 ml-5 mb-5">
-          Favorite Movies
-        </h2>
-        <div className="flex flex-wrap justify-center	m-auto gap-8 p-5 text-white">
+        <h2 className="text-2xl text-black mt-5 ml-5 mb-5">Favorite Movies</h2>
+        <div className="flex flex-wrap justify-center	m-auto gap-8 p-5">
           {this.props.movies &&
             this.props.movies.map((movie) => (
               <div key={movie.id} className="text-black grid">
