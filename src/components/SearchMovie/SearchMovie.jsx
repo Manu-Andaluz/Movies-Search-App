@@ -39,7 +39,7 @@ export default function SearchMovie() {
       />
       <button type="submit" className="bg-gray-100 text-sm px-8 py-2.5">
         <svg
-          class="w-4 h-5 text-gray-900"
+          className="w-4 h-5 text-gray-900"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

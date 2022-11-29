@@ -4,7 +4,7 @@ import { getMovies, addMovieFavorite } from "../../actions";
 import MovieCard from "../MovieCard/MovieCard";
 import SearchMovie from "../SearchMovie/SearchMovie";
 
-export class Buscador extends Component {
+export class FrontPage extends Component {
   render() {
     return (
       <div className="p-5 my-5">
@@ -20,6 +20,7 @@ export class Buscador extends Component {
                 id={movie.imdbID}
                 title={movie.Title}
                 poster={movie.Poster}
+                key={movie.imdbID}
               />
             ))}
         </ul>
@@ -41,4 +42,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Buscador);
+export default connect(mapStateToProps, mapDispatchToProps)(FrontPage);

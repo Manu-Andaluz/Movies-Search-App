@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
 import { getMovieDetail } from "../../actions/index";
 
-export default function Movie() {
+export default function MovieDetails() {
   let movieID = useParams();
   const dispatch = useDispatch();
 
