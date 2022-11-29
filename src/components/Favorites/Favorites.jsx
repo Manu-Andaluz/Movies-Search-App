@@ -15,7 +15,10 @@ export class ConnectedList extends Component {
             this.props.movies.map((movie) => (
               <div key={movie.id} className="text-white grid">
                 <img src={movie.img} className="w-64" />
-                <Link to={`/movie/:${movie.id}`} className="text-sm	m-auto">
+                <Link
+                  to={`/movie/:${movie.id}`}
+                  className="text-sm	mt-5 mx-auto"
+                >
                   {movie.title}
                 </Link>
                 <button

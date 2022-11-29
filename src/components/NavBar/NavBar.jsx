@@ -4,14 +4,16 @@ import { Link, NavLink } from "react-router-dom";
 export default function NavBar() {
   return (
     <header className="navbar">
-      <nav className="flex justify-between bg-white border-gray-200 px-5 py-6 sm:px-4 dark:bg-gray-900">
-        <div className="flex">
-          <Link to="/" className="text-slate-100 text-lg">
+      <nav className="flex justify-between bg-white border-gray-200 px-5 py-6 sm:px-4 dark:bg-gray-900 items-center">
+        <div className="flex ">
+          <Link to="/" className="text-slate-100 text-xl ">
             Movies App
           </Link>
         </div>
 
-        <ul className="flex">
+        <div className="flex"></div>
+
+        <ul className="flex ">
           <li className="list-item ">
             <NavLink
               to="/"
