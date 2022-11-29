@@ -6,14 +6,18 @@ import { Link } from "react-router-dom";
 export class ConnectedList extends Component {
   render() {
     return (
-      <div className="grid place-content-center p-5 text-white">
-        <h2 className="text-2xl mb-8">Favorite Movies</h2>
-        <ul className="grid gap-8 grid-cols-4 place-content-center">
+      <div className="grid place-content-center my-2 text-center">
+        <h2 className="text-2xl mb-auto text-white mt-5 ml-5 mb-5">
+          Favorite Movies
+        </h2>
+        <div className="flex flex-wrap justify-center	m-auto gap-8 p-5 text-white">
           {this.props.movies &&
             this.props.movies.map((movie) => (
-              <div key={movie.id} className="text-white">
+              <div key={movie.id} className="text-white grid">
                 <img src={movie.img} className="w-64" />
-                <Link to={`/movie/:${movie.id}`}>{movie.title}</Link>
+                <Link to={`/movie/:${movie.id}`} className="text-sm	m-auto">
+                  {movie.title}
+                </Link>
                 <button
                   onClick={() => this.props.removeMovieFavorite(movie.id)}
                   className="max-w-s focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 m-5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
@@ -22,7 +26,7 @@ export class ConnectedList extends Component {
                 </button>
               </div>
             ))}
-        </ul>
+        </div>
       </div>
     );
   }
