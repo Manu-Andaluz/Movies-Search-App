@@ -31,15 +31,15 @@ export default function SearchMovie() {
       <input
         type="text"
         placeholder="Search Movie..."
-        className="bg-gray-100 text-sm focus:ring-blue-500 focus:border-blue-500 block sm:w-96 2xl:w-3/5 px-8 py-2.5 dark:placeholder-gray-700 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        className="bg-slate-700 text-sm focus:ring-blue-500 focus:border-blue-500 block sm:w-96 2xl:w-3/5 px-8 py-3.5 dark:placeholder-white text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         id="title"
         autoComplete="off"
         value={title}
         onChange={(e) => handleChange(e)}
       />
-      <button type="submit" className="bg-gray-100 text-sm px-8 py-2.5">
+      <button type="submit" className="bg-slate-700 text-sm px-8 py-3.5">
         <svg
-          className="w-4 h-5 text-gray-900"
+          className="w-4 h-5 text-white"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

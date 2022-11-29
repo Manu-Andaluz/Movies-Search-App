@@ -13,7 +13,7 @@ export class ConnectedList extends Component {
         <div className="flex flex-wrap justify-center	m-auto gap-8 p-5 text-white">
           {this.props.movies &&
             this.props.movies.map((movie) => (
-              <div key={movie.id} className="text-white grid">
+              <div key={movie.id} className="text-black grid">
                 <img src={movie.img} className="w-64" />
                 <Link
                   to={`/movie/:${movie.id}`}

@@ -4,9 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 export default function NavBar() {
   return (
     <header className="navbar">
-      <nav className="flex justify-between bg-white border-gray-200 px-5 py-6 sm:px-4 dark:bg-gray-900 items-center">
+      <nav className="flex justify-around bg-white shadow-md px-5 py-6 sm:px-4 items-center">
         <div className="flex ">
-          <Link to="/" className="text-slate-100 text-xl ">
+          <Link to="/" className="text-black text-xl ">
             Movies App
           </Link>
         </div>
@@ -19,8 +19,8 @@ export default function NavBar() {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-400 px-5 lg:text-lg sm:text-sm"
-                  : "text-slate-100 px-5 lg:text-lg sm:text-sm"
+                  ? "text-blue-600 px-5 lg:text-lg sm:text-sm font-semibold"
+                  : "text-black px-5 lg:text-lg sm:text-sm"
               }
               end
             >
@@ -30,8 +30,8 @@ export default function NavBar() {
               to="/favs"
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-400 px-5 lg:text-lg sm:text-sm"
-                  : "text-slate-100 px-5 lg:text-lg sm:text-sm"
+                  ? "text-blue-600 px-5 lg:text-lg sm:text-sm font-semibold"
+                  : "text-black px-5 lg:text-lg sm:text-sm"
               }
             >
               Favorites
