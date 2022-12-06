@@ -6,7 +6,7 @@ export default function NavBar() {
     <header className="navbar">
       <nav className="flex justify-around bg-white shadow-md px-5 py-6 sm:px-4 items-center">
         <div className="flex ">
-          <Link to="/" className="text-black text-xl ">
+          <Link to="/" className="text-blue-600 font-semibold text-xl ">
             Movies App
           </Link>
         </div>

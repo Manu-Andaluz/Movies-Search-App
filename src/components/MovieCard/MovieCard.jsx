@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 const MovieCard = ({ id, title, poster }) => {
   const dispatch = useDispatch();
   return (
-    <div
-      className="grid place-content-center gap-0 py-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out"
-      key={id}
-    >
-      <Link to={`/movie/:${id}`} className="text-center grid gap-4">
+    <div className="grid place-content-center py-5" key={id}>
+      <Link
+        to={`/movie/:${id}`}
+        className="text-center grid gap-4 mb-2 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out"
+      >
         <img
           src={poster}
           className="object-contain h-80 w-full rounded"
